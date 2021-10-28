@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "usr")
@@ -20,9 +19,9 @@ public class User {
     private Long id;
     private String login;
     private String password;
-    @OneToMany(targetEntity = Doc.class,cascade = CascadeType.ALL)
+    @OneToMany(targetEntity = Car.class,cascade = CascadeType.ALL)
     @JoinColumn(name = "ud_fk", referencedColumnName = "id")
-    private List<Doc> documentList;
+    private List<Car> documentList;
    /* @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))
     @Enumerated(EnumType.STRING)

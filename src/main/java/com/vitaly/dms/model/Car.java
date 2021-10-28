@@ -14,10 +14,11 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Doc {
+public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
-    private String currentDate;
+    private String model;
+    private String specifications;
+    private int cost;
 }

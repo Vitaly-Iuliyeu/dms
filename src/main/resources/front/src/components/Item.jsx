@@ -1,14 +1,18 @@
 import React from 'react';
 
+
+
 const Item = () => {
     return (
         <div className = "post">
             <div className = "content">
-                <strong>Название</strong>
-                <div>Описание</div>
+                <strong>тут будет картинка</strong>
             </div>
+            <div>модель</div>
+            <div>характеристики </div>
+            <div>стоимость</div>
             <div className = "btn">
-                <button>Удалить</button>
+                <button>Просмотр объявления</button>
             </div>
         </div>
     );

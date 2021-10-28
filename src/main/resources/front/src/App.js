@@ -1,9 +1,11 @@
 
 import Item from './components/Item';
-
+import './styles/App.css'
 function App() {
   return (
-   <Item/>
+    <div className = "App">
+     <Item/>
+    </div>
   );
 }
 
