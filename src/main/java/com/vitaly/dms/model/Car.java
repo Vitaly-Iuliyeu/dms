@@ -16,9 +16,11 @@ import java.util.Date;
 @NoArgsConstructor
 public class Car {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String model;
     private String specifications;
+    private String description;
     private int cost;
 }

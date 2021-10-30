@@ -8,13 +8,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/api")
 public class MainController {
     @Autowired
     private CarService carService;
     //private Date date = new Date(System.currentTimeMillis());
 
-    @GetMapping("/allCar")
+    @GetMapping()
     public List<Car> getCar() {
         return carService.getAll();
     }
